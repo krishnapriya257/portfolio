@@ -257,6 +257,16 @@ color: white ;
     object-fit: cover;
         background-color: transparent;
         border-radius: 200%;
+        width: 30px;
+        height: 30px;
+}
+.main-content img {
+    width: 250px;
+    height: auto;
+}
+.sub-content img {
+    width: 150px;
+    height: auto;
 }
 .a{
     color: red;
@@ -298,32 +308,34 @@ color: white ;
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     #navbar {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
         height: auto;
         padding: 10px;
     }
 
     h3 {
-        margin-right: 0;
-        margin-bottom: 10px;
+        margin-right: 10px;
+        margin-bottom: 5px;
     }
 
     #a {
-        margin-right: 20px;
-        margin-bottom: 10px;
+        margin-right: 10px;
+        margin-bottom: 5px;
     }
 
     button {
-        margin-right: 0;
-        margin-bottom: 10px;
+        margin-right: 5px;
+        margin-bottom: 5px;
     }
 
     #placeholder {
-        width: 100%;
-        max-width: 200px;
-        margin-right: 0;
-        margin-bottom: 10px;
+        width: auto;
+        max-width: 150px;
+        margin-right: 5px;
+        margin-bottom: 5px;
     }
 
     .container {
@@ -419,5 +431,13 @@ color: white ;
 
     .pre-font {
         text-align: center;
+    }
+
+    .main-content img {
+        width: 150px;
+    }
+
+    .sub-content img {
+        width: 100px;
     }
 }
