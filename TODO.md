@@ -11,3 +11,6 @@
 - [x] Enhance `.tech-line` class: Change color to red, increase opacity, and add multiple instances or pseudo-elements for a dynamic cyberpunk circuit effect (e.g., vertical and horizontal moving lines).
 - [x] Ensure glassmorphism effects on elements (e.g., `.main-content`, `.sub-content`) remain intact and complement the new background without adjustments to readability.
 - [ ] Test the changes by previewing a page (e.g., contact.html) to confirm the cyberpunk red tech background animates correctly and glassmorphism overlays well.
+- [x] Add mobile responsiveness to styles.css using media queries
+- [x] Fix button centering in index.html
+- [x] Test the website on mobile view

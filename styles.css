@@ -294,3 +294,130 @@ color: white ;
     0% { transform: translateX(-100vw); }
     100% { transform: translateX(100vw); }
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    h3 {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #a {
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #placeholder {
+        width: 100%;
+        max-width: 200px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #button-bar {
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .button-bar {
+        width: 100%;
+        max-width: 300px;
+        font-size: 30px;
+        height: 60px;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        align-items: center;
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    .intro-text {
+        margin-right: 0;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .about-me {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .sub-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    .sub-text {
+        padding-left: 0;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .my-services {
+        text-align: center;
+        padding-left: 0;
+        margin: 20px 0;
+    }
+
+    .sub-services {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .sub-services button {
+        width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 400px;
+        margin: 20px 0;
+    }
+
+    .button-new {
+        margin-left: 0;
+    }
+
+    .large-content {
+        text-align: center;
+    }
+
+    .social-icon {
+        padding-left: 0;
+        margin: 10px;
+    }
+
+    .pre-font {
+        text-align: center;
+    }
+}
