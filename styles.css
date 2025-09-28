@@ -366,8 +366,10 @@ color: white ;
 
     .intro-text {
         margin-left: 20px;
+        margin-top: 0;
         text-align: left;
         font-size: 18px;
+        line-height: 1.4;
     }
 
     .about-me {
