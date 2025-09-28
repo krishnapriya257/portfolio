@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="tech-line" style="left: 10%; animation-delay: 0s;"></div>
+  <div class="tech-line" style="left: 30%; animation-delay: 1s;"></div>
+  <div class="tech-line" style="left: 50%; animation-delay: 2s;"></div>
+  <div class="tech-line" style="left: 70%; animation-delay: 0.5s;"></div>
+  <div class="tech-line" style="left: 90%; animation-delay: 1.5s;"></div>
+
+  <div id="navbar">
+   <img id="logo" src="https://img.freepik.com/premium-vector/anime-style-female-character-vector-illustration_924728-4370.jpg" width="30px" height="30px" alt="Logo">
+   <h3> Krishna Priya</h3>
+    
+    <a id="a"href="contact.html">contact</a>
+    <input id="placeholder" placeholder="Search Here">
+    <button>Search</button>
+ </div>
+
+
+ <div class="container">
+  <div id="button-bar">
+    <button class="button-bar" type="button" onclick="location.href='Education.html'">
+        Education
+
+
+
+ <br>
+<button class="button-bar" type="button" onclick="location.href='career.html'">
+    Career
+ <br>
+<button class="button-bar" type="button" onclick="location.href='projects.html'">
+  Projects
+ <br>
+</button>
+  </div>
+  <div class="main-content">
+   <img class="main-content"src="https://img.freepik.com/premium-vector/anime-style-female-character-vector-illustration_924728-4370.jpg" width="250px" alt="My logo">
+   <div class="intro-text">
+    <pre> <h4>       Hi</h4></pre>
+<br>
+     <h4>I'm Krishna Priya K R</h4>
+   </div>
+  </div>
+ </div>
+
+ <h1 class="about-me"><u>ABOUT ME</u></h1>
+ <div class="sub-content">
+ <img class="sub-content"src="https://img.freepik.com/premium-vector/anime-style-female-character-vector-illustration_924728-4370.jpg" width="150px" alt="My logo">
+     <div class="sub-text">
+ <p>Aspiring Web Devoloper, Currently a Btech first year student </p>
+<p>Specializing in Artificial Intelligence and Data Science.  My</p> 
+<p>Journey into AI and Technology has just begun ...<a class="a" href="Read more.html">Read more</a></p> 
+</div>
+</div>
+</div>
+<h2 class="my-services"><u> My Services</u></h2>
+<div class="sub-services">
+<button class="sub-services" type="button" onclick="location.href='web development.html'">Web development</button>
+
+<button class="sub-services" type="button" onclick="location.href='data analysis.html'">Data analysis</button>
+<button class="sub-services" type="button" onclick="location.href='machinelearning.html'">Machine Learning</button>
+</div>
+
+<div class="pre-font">
+<h2><pre class="pre-font">   <u>Queries</u></pre></h2>
+</div>
+<form id="contact-form">
+<div class="button-new">
+<label>Name:</label>
+<input type="text" name="name" id="name" required>
+<br>
+<label>Email:</label>
+<input type="email" name="email" id="email" required><br>
+<label>Message:</label>
+<textarea name="message" id="message" required></textarea><br>
+<button class="button-sub" type="submit">Submit</button>
+</div>
+</form>
+<h2 class="sub-icons"><u>Social Icons</u></h2>
+<div class="large-content">
+<a class="social-icon"href="https://www.instagram.com/krishh_napriya_?igsh=Zjlsa2V1NXY2Z3Y1" target="_blank">
+<ion-icon name="logo-instagram"></ion-icon>
+</a>
+<a class="social-icon" href="https://www.linkedin.com/in/krishna-priya-k-r-9a1538381?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+    <ion-icon name="logo-linkedin"></ion-icon>
+</a>
+</div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+document.querySelector('button').addEventListener('click', function() {
+    const query = document.getElementById('placeholder').value.trim().toLowerCase();
+    let url;
+    switch(query) {
+        case 'education':
+            url = 'Education.html';
+            break;
+        case 'career':
+            url = 'career.html';
+            break;
+        case 'projects':
+            url = 'projects.html';
+            break;
+        case 'web development':
+            url = 'web development.html';
+            break;
+        case 'data analysis':
+            url = 'data analysis.html';
+            break;
+        case 'machine learning':
+            url = 'machinelearning.html';
+            break;
+        case 'about':
+            url = 'about.html';
+            break;
+        case 'contact':
+            url = 'contact.html';
+            break;
+        default:
+            alert('Page not found');
+            return;
+    }
+    window.location.href = url;
+});
+
+// EmailJS integration
+(function() {
+    emailjs.init("TxJfJREhtR9iDfFib");
+})();
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    emailjs.send("service_3qi8q8p", "__ejs-test-mail-service__", {
+        name: name,
+        email: email,
+        message: message
+    }, "TxJfJREhtR9iDfFib")
+    .then(function(response) {
+        alert('Your message has been sent successfully!');
+        document.getElementById('contact-form').reset();
+    }, function(error) {
+        alert('Failed to send message. Please try again.');
+        console.log('EmailJS error:', error);
+    });
+});
+</script>
+
+</body>
+</html>
