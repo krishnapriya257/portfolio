@@ -13,4 +13,6 @@
 - [ ] Test the changes by previewing a page (e.g., contact.html) to confirm the cyberpunk red tech background animates correctly and glassmorphism overlays well.
 - [x] Add mobile responsiveness to styles.css using media queries
 - [x] Fix button centering in index.html
-- [x] Test the website on mobile view
+- [x] Fix navbar alignment on mobile
+- [x] Decrease image sizes on mobile
+- [ ] Test the website on mobile view
