@@ -9,22 +9,22 @@
     <style>
         .zenjirou-font {
             font-family:fantasy;
-            font-size: 40px; 
-            color:black; 
+            font-size: 40px;
+            color:black;
             line-height: 1.2;
             letter-spacing: 3px;
         }
 
         body {
             font-family: 'Zenjirou', sans-serif;
-            
+
         }
 
 
         h1{
             text-align: center;
             padding-top: 320px;
-            
+
             color:white;
         }
         button{
@@ -43,6 +43,41 @@ margin: 20px auto;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;}
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .zenjirou-font {
+                font-size: 28px;
+                letter-spacing: 2px;
+            }
+
+            h1 {
+                padding-top: 200px;
+            }
+
+            button {
+                font-size: 16px;
+                height: 30px;
+                margin: 15px auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .zenjirou-font {
+                font-size: 24px;
+                letter-spacing: 1px;
+            }
+
+            h1 {
+                padding-top: 150px;
+            }
+
+            button {
+                font-size: 14px;
+                height: 28px;
+                margin: 10px auto;
+            }
+        }
     </style>
 </head>
 <body>
