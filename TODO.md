@@ -16,3 +16,9 @@
 - [x] Fix navbar alignment on mobile
 - [x] Decrease image sizes on mobile
 - [ ] Test the website on mobile view
+
+# Mobile Layout Adjustment for portfolio.html (Image and Text on Right of Buttons)
+
+- [x] Update styles.css: In @media (max-width: 768px), set .container to flex-direction: row with space-between, adjust #button-bar to width: 45% and left-aligned, .main-content to width: 50% and centered.
+- [x] Add @media (max-width: 480px) in styles.css: Revert .container to flex-direction: column for very small screens to prevent overflow.
+- [x] Test portfolio.html on mobile viewports (768px and 480px) using browser resize or browser_action tool to confirm buttons left, image+text right (under image), no overlap, and desktop unchanged.
